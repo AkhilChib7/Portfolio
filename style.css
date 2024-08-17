@@ -1,0 +1,612 @@
+/* Resetting and base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern Classy Color Scheme */
+:root {
+    --primary-color: #8A2BE2;   /* Elegant Purple */
+    --secondary-color: #4B0082; /* Deep Indigo */
+    --accent-color: #6A5ACD;    /* Medium Slate Blue */
+    --text-color: #FFFFFF;      /* White */
+    --background-color: #1C1C1C;/* Black */
+    --highlight-color: #9370DB; /* Medium Purple */
+    --button-hover-color: #483D8B; /* Dark Slate Blue */
+}
+
+/* Body and typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Header with Flexbox */
+header {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 25px;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+/* Home section with a modern look */
+#home {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+#home h1 {
+    font-size: 3.5em;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: var(--text-color);
+    max-width: 750px;
+    margin: 25px auto;
+}
+
+/* Professional Dashboard Styles with CSS Grid */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 50px;
+    background-color: var(--background-color);
+}
+
+.card {
+    background-color: var(--highlight-color);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--background-color);
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 4px solid var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 12px 0;
+    }
+
+    #home {
+        padding: 80px 15px;
+    }
+
+    .dashboard {
+        padding: 30px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+
+
+
+/*contact page*/
+
+/* Resetting and base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern Classy Color Scheme */
+:root {
+    --primary-color: #8A2BE2;   /* Elegant Purple */
+    --secondary-color: #4B0082; /* Deep Indigo */
+    --accent-color: #6A5ACD;    /* Medium Slate Blue */
+    --text-color: #FFFFFF;      /* White */
+    --background-color: #1C1C1C;/* Black */
+    --highlight-color: #9370DB; /* Medium Purple */
+    --button-hover-color: #483D8B; /* Dark Slate Blue */
+}
+
+/* Body and typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 60px 20px;
+    background-color: var(--secondary-color);
+}
+
+.contact-content {
+    color: var(--text-color);
+}
+
+.contact-content h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.contact-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content a:hover {
+    color: var(--primary-color);
+}
+
+/* Back Button Styling */
+.back-button-container {
+    margin-top: 30px;
+}
+
+.back-button-container a {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-container a:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact {
+        padding: 40px 15px;
+    }
+
+    .contact-content h1 {
+        font-size: 2.5em;
+    }
+
+    .contact-content p {
+        font-size: 1em;
+    }
+
+    .back-button-container a {
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+ 
+
+/* My Work */
+
+/* Resetting and base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern Classy Color Scheme */
+:root {
+    --primary-color: #8A2BE2;   /* Elegant Purple */
+    --secondary-color: #4B0082; /* Deep Indigo */
+    --accent-color: #6A5ACD;    /* Medium Slate Blue */
+    --text-color: #FFFFFF;      /* White */
+    --background-color: #1C1C1C;/* Black */
+    --highlight-color: #9370DB; /* Medium Purple */
+    --button-hover-color: #483D8B; /* Dark Slate Blue */
+}
+
+/* Body and typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* My Work Section Styling */
+#my-work {
+    padding: 60px 20px;
+}
+
+#my-work h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Project Section Styling */
+.project-section {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.project-section:hover {
+    background-color: var(--highlight-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.project-section p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--primary-color);
+}
+
+/* Back Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button-container a {
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-container a:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid var(--primary-color);
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #my-work {
+        padding: 40px 15px;
+    }
+
+    #my-work h1 {
+        font-size: 2em;
+    }
+
+    .project-section h2 {
+        font-size: 1.5em;
+    }
+
+    .project-section p {
+        font-size: 0.9em;
+    }
+
+    .back-button-container a {
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+/* resume*/
+
+/* Resetting and base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern Classy Color Scheme */
+:root {
+    --primary-color: #8A2BE2;   /* Elegant Purple */
+    --secondary-color: #4B0082; /* Deep Indigo */
+    --accent-color: #6A5ACD;    /* Medium Slate Blue */
+    --text-color: #FFFFFF;      /* White */
+    --background-color: #1C1C1C;/* Black */
+    --highlight-color: #9370DB; /* Medium Purple */
+    --button-hover-color: #483D8B; /* Dark Slate Blue */
+}
+
+/* Body and typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Resume Section Styling */
+#resume {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.download-button-container a {
+    padding: 12px 28px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.download-button-container a:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Back Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button-container button {
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.back-button-container button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid var(--primary-color);
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .download-button-container a {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .back-button-container button {
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* About*/
+
+
+/* Resetting and base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern Classy Color Scheme */
+:root {
+    --primary-color: #8A2BE2;   /* Elegant Purple */
+    --secondary-color: #4B0082; /* Deep Indigo */
+    --accent-color: #6A5ACD;    /* Medium Slate Blue */
+    --text-color: #FFFFFF;      /* White */
+    --background-color: #1C1C1C;/* Black */
+    --highlight-color: #9370DB; /* Medium Purple */
+    --button-hover-color: #483D8B; /* Dark Slate Blue */
+}
+
+/* Body and typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* About Me Section Styling */
+#about-me {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-content h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.about-content strong {
+    color: var(--highlight-color);
+}
+
+/* Back Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button-container button {
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.back-button-container button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid var(--primary-color);
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content p {
+        font-size: 1em;
+    }
+
+    .back-button-container button {
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+
+
